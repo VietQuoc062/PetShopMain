@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="PetShop_Admin" default="war" basedir=".">
+
+    <!-- Các đường dẫn cơ bản -->
+    <property name="src.dir" value="src/main/java"/>
+    <property name="web.dir" value="src/main/webapp"/>
+    <property name="build.dir" value="build"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="war.name" value="PetShop_Admin.war"/>
+
+    <!-- Đường dẫn đến Tomcat -->
+    <property name="tomcat.home" value="D:/Code/Năm 3/ltw/apache-tomcat-9.0.108"/>
+    <property name="tomcat.lib" value="${tomcat.home}/lib"/>
+
+    <!-- Clean -->
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+
+    <!-- Compile -->
+    <target name="compile">
+        <mkdir dir="${build.dir}/classes"/>
+        <javac srcdir="${src.dir}" 
+               destdir="${build.dir}/classes" 
+               includeantruntime="false" 
+               encoding="UTF-8">
+            <classpath>
+                <!-- servlet-api.jar trong Tomcat -->
+                <pathelement location="${tomcat.lib}/servlet-api.jar"/>
+                <!-- Nếu bạn dùng JSTL thì thêm ở WEB-INF/lib -->
+                <fileset dir="${web.dir}/WEB-INF/lib">
+                    <include name="**/*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+
+    <!-- Đóng gói WAR -->
+    <target name="war" depends="compile">
+        <mkdir dir="${dist.dir}"/>
+        <war destfile="${dist.dir}/${war.name}" webxml="${web.dir}/WEB-INF/web.xml">
+            <fileset dir="${web.dir}"/>
+            <classes dir="${build.dir}/classes"/>
+        </war>
+
+        <!-- Copy file WAR sang Tomcat/webapps -->
+        <copy file="${dist.dir}/${war.name}" todir="${tomcat.home}/webapps"/>
+        <echo message="WAR file copied to Tomcat webapps folder: ${tomcat.home}/webapps/${war.name}"/>
+    </target>
+
+</project>
