@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.header {
+    background-color: #007bff;
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 2% 4%;
+    border: none;
+    text-align: center;
+    box-shadow: 2px 2px 2px #dddddd;
+}
+
+form{
+    margin: 30px auto;        /* Căn giữa ngang */
+    padding: 20px 30px;       /* Thêm khoảng cách trong */
+    width: 75%;
+    border: 1px #dddddd solid;
+    overflow: hidden;            /* Giữ bo góc */
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 180px;        /* Chiều rộng cố định cho label */
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    flex: 1;             /* Input tự giãn hết phần còn lại */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#thanhtoan {
+    margin-top: 15px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#comeback {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 180px;        /* Chiều rộng cố định cho label */
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    flex: 1;             /* Input tự giãn hết phần còn lại */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: darkgreen;
+}
+.order-table {
+    width: 80%;                  /* Chiều rộng bảng */
+    margin: 30px auto;           /* Căn giữa */
+    border-collapse: collapse;   /* Gom đường kẻ */
+    background: #fff;            /* Nền trắng */
+    border-radius: 12px;         /* Bo góc */
+    overflow: hidden;            /* Giữ bo góc */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Đổ bóng */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+.order-table thead {
+    background: #007bff;         /* Màu xanh dương */
+    color: white;                /* Chữ trắng */
+}
+.order-table th,
+.order-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+#tttt {
+    margin-left: 35%;
+    text-align: center;
+    width: 20%;
+    background-color: lightskyblue;
+    color: white;
+    font-size: 90%;
+    font-weight: bold;
+    padding: 2% 4%;
+    border: none;
+    box-shadow: 3px 3px 3px #cccccc;
+}
+#dhtc {
+    background-color: #007bff;
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 2% 4%;
+    border: none;
+    text-align: center;
+    box-shadow: 2px 2px 2px #dddddd;
+}
