@@ -1,0 +1,65 @@
+/* Toàn bộ khung chứa */
+.success-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Tiêu đề chính */
+.success-title {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+/* Nội dung thông báo */
+.success-msg {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Tiêu đề chi tiết đơn hàng */
+.order-detail-title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #007bff;
+}
+
+/* Bảng chi tiết */
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Định dạng header của bảng */
+.order-table th {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Định dạng ô dữ liệu */
+.order-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Tô nền xen kẽ cho bảng */
+.order-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Hover vào hàng */
+.order-table tr:hover {
+    background: #f1f1f1;
+}

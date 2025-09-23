@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop thú cưng</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Sidebar lọc -->
+  <div class="sidebar">
+
+    <!-- Tabs chính -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="dog-shop">Shop cho Chó</button>
+      <button class="tab-btn" data-tab="cat-shop">Shop cho Mèo</button>
+    </div>
+
+    <!-- Nội dung tab Shop cho Chó -->
+<!-- Nội dung tab Shop cho Chó -->
+<div class="tab-content active" id="dog-shop">
+  <!-- Tabs con -->
+  <div class="sub-tabs">
+    <button class="sub-tab-btn active" data-subtab="dog-breeds">Giống Chó</button>
+    <button class="sub-tab-btn" data-subtab="dog-products">Sản phẩm Chó</button>
+  </div>
+
+  <!-- Giống chó (có thêm giới tính) -->
+  <div class="sub-tab-content active" id="dog-breeds">
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Chọn giống chó
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="dog-type" value="pug"> Pug</label><br>
+        <label><input type="radio" name="dog-type" value="pitbull"> Pitbull</label><br>
+        <label><input type="radio" name="dog-type" value="golden"> Golden</label><br>
+        <label><input type="radio" name="dog-type" value="husky"> Husky</label><br>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Chọn giới tính
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="dog-gender" value="all-dog-gender" checked> Tất cả</label><br>
+        <label><input type="radio" name="dog-gender" value="dog-male"> Đực</label><br>
+        <label><input type="radio" name="dog-gender" value="dog-female"> Cái</label><br>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Chọn độ tuổi
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="dog-age" value="all-dog-age" checked> Tất cả</label><br>
+        <label><input type="radio" name="dog-age" value="dog-kitten"> Chó con (dưới 3 tháng tuổi)</label><br>
+        <label><input type="radio" name="dog-age" value="dog-young">  Chó nhỏ (dưới 1 tuổi)</label><br>
+        <label><input type="radio" name="dog-age" value="dog-adult"> Chó trưởng thành (trên 1 tuổi)</label><br>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sản phẩm chó -->
+  <div class="sub-tab-content" id="dog-products">
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Thức ăn cho chó
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="dog-ptype" value="dog-dry-food"> Hạt khô</label><br>
+        <label><input type="radio" name="dog-ptype" value="dog-pate"> Pate</label><br>
+        <label><input type="radio" name="dog-ptype" value="dog-soup"> Súp thưởng, bánh thưởng</label><br>
+        <label><input type="radio" name="dog-ptype" value="dog-milk"> Sữa</label><br>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Đồ chơi cho chó
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="dog-ptype" value="dog-train-toy"> Đồ chơi huấn luyện</label><br>
+        <label><input type="radio" name="dog-ptype" value="dog-movement-toy"> Đồ chơi vận động</label><br>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Phụ kiện cho chó 
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="dog-ptype" value="dog-necklace"> Vòng cổ</label><br>
+        <label><input type="radio" name="dog-ptype" value="dog-toilet"> Chậu vệ sinh</label><br>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Chăm sóc sức khỏe cho chó
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="dog-ptype" value="dog-phealth"> Thực phẩm sức khỏe</label><br>
+        <label><input type="radio" name="dog-ptype" value="dog-phealth-hair"> Thực phẩm chăm sóc lông</label><br>
+        <label><input type="radio" name="dog-ptype" value="dog-anti-lice"> Thuốc diệt ve rận</label><br>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Nội dung tab Shop cho Mèo -->
+<div class="tab-content" id="cat-shop">
+  <!-- Tabs con -->
+  <div class="sub-tabs">
+    <button class="sub-tab-btn active" data-subtab="cat-breeds">Giống Mèo</button>
+    <button class="sub-tab-btn" data-subtab="cat-products">Sản phẩm Mèo</button>
+  </div>
+
+  <!-- Giống mèo (có thêm giới tính) -->
+  <div class="sub-tab-content active" id="cat-breeds">
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Chọn giống mèo
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="cat-type" value="tabby"> Tabby</label><br>
+        <label><input type="radio" name="cat-type"  value="tuxedo"> Tuxedo</label><br>
+        <label><input type="radio" name="cat-type"  value="persian"> Persian</label><br>
+        <label><input type="radio" name="cat-type"  value="ragdoll"> Ragdoll</label><br>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Chọn giới tính
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="cat-gender" value="all-cat-gender" checked> Tất cả</label><br>
+        <label><input type="radio" name="cat-gender" value="cat-male"> Đực</label><br>
+        <label><input type="radio" name="cat-gender" value="cat-female"> Cái</label><br>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Chọn độ tuổi
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="cat-age" value="all-cat-age" checked> Tất cả</label><br>
+        <label><input type="radio" name="cat-age" value="cat-kitten"> Mèo con (dưới 3 tháng tuổi)</label><br>
+        <label><input type="radio" name="cat-age" value="cat-young"> Mèo nhỏ (dưới 1 năm tuổi)</label><br>
+        <label><input type="radio" name="cat-age" value="cat-adult"> Trưởng thành (hơn 1 tuổi)</label><br>
+      </div>
+    </div>
+  </div>
+  <!-- Sản phẩm mèo -->
+  <div class="sub-tab-content" id="cat-products">
+    <!-- Sản phẩm mèo -->
+  <div class="sub-tab-content" id="cat-products">
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Thức ăn cho mèo
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="cat-ptype" value="cat-dry-food"> Hạt khô</label><br>
+        <label><input type="radio" name="cat-ptype" value="cat-pate"> Pate</label><br>
+        <label><input type="radio" name="cat-ptype" value="cat-soup"> Súp thưởng, bánh thưởng</label><br>
+        <label><input type="radio" name="cat-ptype" value="cat-milk"> Sữa</label><br>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Đồ chơi cho mèo
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="cat-ptype" value="cat-train-toy"> Đồ chơi huấn luyện</label><br>
+        <label><input type="radio" name="cat-ptype" value="cat-movement-toy"> Đồ chơi vận động</label><br>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Phụ kiện cho mèo
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="cat-ptype" value="cat-necklace"> Vòng cổ</label><br>
+        <label><input type="radio" name="cat-ptype" value="cat-toilet"> Chậu vệ sinh</label><br>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-header">
+        Chăm sóc sức khỏe cho mèo
+        <span class="arrow">▼</span>
+      </h3>
+      <div class="filter-options">
+        <label><input type="radio" name="cat-ptype" value="cat-phealth"> Thực phẩm sức khỏe</label><br>
+        <label><input type="radio" name="cat-ptype" value="cat-phealth-hair"> Thực phẩm chăm sóc lông</label><br>
+        <label><input type="radio" name="cat-ptype" value="cat-anti-lice"> Thuốc diệt ve rận</label><br>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+  <!-- Danh sách sản phẩm -->
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
