@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+      
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design | Pet Shop</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">Pet Shop</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">       
+  <li>
+    <a href="#dangban">
+      <div class="nav-item">
+        <i class="ri-store-line"></i>
+        <span>ĐANG BÁN</span>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#giongcho">
+      <div class="nav-item">
+        <i class="ri-bear-smile-line"></i>
+        <span>GIỐNG CHÓ</span>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#phukien">
+      <div class="nav-item">
+        <i class="ri-shirt-line"></i>
+        <span>PHỤ KIỆN</span>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#dichvu">
+      <div class="nav-item">
+        <i class="ri-customer-service-line"></i>
+        <span>DỊCH VỤ</span>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#gioithieu">
+      <div class="nav-item">
+        <i class="ri-information-line"></i>
+        <span>GIỚI THIỆU</span>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#lienhe">
+      <div class="nav-item">
+        <i class="ri-mail-line"></i>
+        <span>LIÊN HỆ</span>
+      </div>
+    </a>
+  </li>
+  <li class="cart-item">
+    <a href="#giohang">
+      <div class="nav-item">
+        <i class="ri-shopping-cart-line"></i>
+        <span>GIỎ HÀNG</span>
+        <div class="cart-badge"></div>
+      </div>
+    </a>
+  </li>
+</ul>
+
+    </nav>
+    <header id="home">
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h4>Chào mừng</h4>
+          <h1>Pet<br /><span>Shop</span></h1>
+          <h2>Chúng tôi yêu thú cưng như bạn</h2>
+          <p>
+            Từ việc chăm sóc hàng ngày đến các dịch vụ chuyên nghiệp, 
+            chúng tôi luôn ở đây để đảm bảo thú cưng của bạn có cuộc sống hạnh phúc và khỏe mạnh.
+          </p>
+        </div>
+        <div class="header__image">
+          <img
+            src="assets/header-bg.png"
+            alt="header-bg"
+            class="header__image-bg"
+          />
+          <img src="assets/header.png" alt="header" />
+        </div>
+      </div>
+      <div class="header__bottom"></div>
+    </header>
+
+    <section class="section__container intro__container">
+      <p class="section__subheader">Giới thiệu</p>
+      <h2 class="section__header">Tìm hiểu thêm về chúng tôi</h2>
+      <div class="intro__grid">
+        <div class="intro__card">
+          <div class="intro__image">
+            <img src="assets/intro-1.png" alt="intro" />
+          </div>
+          <h4>Chuyên gia thú cưng</h4>
+          <p>
+            Gặp gỡ đội ngũ chuyên gia giàu kinh nghiệm, luôn tận tâm vì sức khỏe và hạnh phúc của thú cưng.
+          </p>
+        </div>
+        <div class="intro__card">
+          <div class="intro__image">
+            <img src="assets/intro-2.png" alt="intro" />
+          </div>
+          <h4>Dịch vụ chăm sóc</h4>
+          <p>
+            Cung cấp đa dạng dịch vụ chăm sóc thú cưng để giữ cho các bé luôn khỏe mạnh và vui vẻ.
+          </p>
+        </div>
+        <div class="intro__card">
+          <div class="intro__image">
+            <img src="assets/intro-3.png" alt="intro" />
+          </div>
+          <h4>Liên hệ với chúng tôi</h4>
+          <p>
+            Liên hệ với chúng tôi để được tư vấn hoặc đặt lịch hẹn chăm sóc cho thú cưng yêu quý.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <p class="section__subheader">Về chúng tôi</p>
+      <h2 class="section__header">Chúng tôi có thể làm gì cho bạn</h2>
+      <div class="about__row">
+        <div class="about__image">
+          <img src="assets/about-1.jpg" alt="about" />
+        </div>
+        <div class="about__content">
+          <span><img src="assets/about-1-icon.png" alt="about-icon" /></span>
+          <h4>Chúng tôi sẽ giúp bạn chăm sóc sức khỏe thú cưng</h4>
+          <p>
+            Các chuyên gia của chúng tôi luôn sẵn sàng cung cấp dịch vụ chăm sóc toàn diện 
+            để đảm bảo thú cưng của bạn luôn có sức khỏe hoàn hảo.
+          </p>
+        </div>
+      </div>
+      <div class="about__row">
+        <div class="about__image">
+          <img src="assets/about-2.jpg" alt="about" />
+        </div>
+        <div class="about__content">
+          <span><img src="assets/about-2-icon.png" alt="about-icon" /></span>
+          <h4>Đội ngũ tận tâm sẽ chăm sóc thú cưng của bạn</h4>
+          <p>
+            Thú cưng của bạn sẽ được chăm sóc bởi đội ngũ nhân viên tận tâm và được đào tạo bài bản, 
+            họ đối xử với mọi thú cưng như gia đình.
+          </p>
+        </div>
+      </div>
+      <div class="about__row">
+        <div class="about__image">
+          <img src="assets/about-3.jpg" alt="about" />
+        </div>
+        <div class="about__content">
+          <span><img src="assets/about-3-icon.png" alt="about-icon" /></span>
+          <h4>Hãy để chúng tôi làm đẹp cho thú cưng quý giá của bạn</h4>
+          <p>
+            Từ tắm rửa đến tạo kiểu, chúng tôi cung cấp dịch vụ làm đẹp chuyên nghiệp 
+            để thú cưng của bạn luôn đẹp và thoải mái nhất.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="product" id="store">
+      <div class="section__container product__container">
+        <p class="section__subheader">Sản phẩm</p>
+        <h2 class="section__header">Sản phẩm nổi bật cho thú cưng</h2>
+        <div class="product__grid">
+          <div class="product__card">
+            <img src="assets/product-1.jpg" alt="product" />
+            <h4>Túi đựng rác cho chó</h4>
+            <p>
+              Túi rác tiện lợi và thân thiện với môi trường giúp dễ dàng vệ sinh chất thải của thú cưng.
+            </p>
+            <h3>690.000₫</h3>
+          </div>
+          <div class="product__card">
+            <img src="assets/product-2.jpg" alt="product" />
+            <h4>Phụ kiện thú cưng</h4>
+            <p>
+              Khám phá bộ sưu tập phụ kiện thời trang và tiện dụng cho những người bạn bốn chân.
+            </p>
+            <h3>1.190.000₫</h3>
+          </div>
+          <div class="product__card">
+            <img src="assets/product-3.jpg" alt="product" />
+            <h4>Thức ăn cho chó</h4>
+            <p>
+              Thức ăn bổ dưỡng và ngon miệng để giữ cho thú cưng của bạn khỏe mạnh và vui vẻ.
+            </p>
+            <h3>1.890.000₫</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container service__container" id="service">
+      <p class="section__subheader">Dịch vụ</p>
+      <h2 class="section__header">Chúng tôi có thể làm gì cho bạn</h2>
+      <div class="service__flex">
+        <div class="service__card">
+          <div>
+            <img src="assets/service-1.png" alt="service" />
+          </div>
+          <p>Chăm sóc khẩn cấp</p>
+        </div>
+        <div class="service__card">
+          <div>
+            <img src="assets/service-2.png" alt="service" />
+          </div>
+          <p>Dịch vụ tiêm phòng</p>
+        </div>
+        <div class="service__card">
+          <div>
+            <img src="assets/service-3.png" alt="service" />
+          </div>
+          <p>Tư vấn dinh dưỡng</p>
+        </div>
+        <div class="service__card">
+          <div>
+            <img src="assets/service-4.png" alt="service" />
+          </div>
+          <p>Tư vấn hành vi</p>
+        </div>
+        <div class="service__card">
+          <div>
+            <img src="assets/service-5.png" alt="service" />
+          </div>
+          <p>Dịch vụ gửi thú cưng</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="client">
+      <div class="section__container client__container">
+        <p class="section__subheader">Đánh giá khách hàng</p>
+        <h2 class="section__header">Khách hàng nói gì về chúng tôi</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__details">
+                  <img src="assets/client-1.jpg" alt="client" />
+                  <div>
+                    <h4>Nguyễn Thị Hoa</h4>
+                    <h5>Thiết kế đồ họa</h5>
+                  </div>
+                </div>
+                <p>
+                  Dịch vụ chăm sóc cho chó của tôi tại Pet Shop thực sự tuyệt vời. 
+                  Các chuyên gia rất chu đáo và quan tâm đến sức khỏe của thú cưng.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__details">
+                  <img src="assets/client-2.jpg" alt="client" />
+                  <div>
+                    <h4>Trần Văn Nam</h4>
+                    <h5>Kỹ sư phần mềm</h5>
+                  </div>
+                </div>
+                <p>
+                  Pet Shop đã cứu con mèo của tôi trong tình huống khẩn cấp! 
+                  Sự phản ứng nhanh chóng và chuyên môn của họ đã tạo nên sự khác biệt.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__details">
+                  <img src="assets/client-3.jpg" alt="client" />
+                  <div>
+                    <h4>Lê Thị Mai</h4>
+                    <h5>Giáo viên</h5>
+                  </div>
+                </div>
+                <p>
+                  Tôi tin tưởng Pet Shop với tất cả thú cưng của mình. Đội ngũ chuyên nghiệp 
+                  và luôn tận tâm hết mình cho bệnh nhân của họ.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__details">
+                  <img src="assets/client-4.jpg" alt="client" />
+                  <div>
+                    <h4>Phạm Minh Tuấn</h4>
+                    <h5>Chuyên viên marketing</h5>
+                  </div>
+                </div>
+                <p>
+                  Dịch vụ làm đẹp tại Pet Shop thật tuyệt vời! Con chó của tôi 
+                  luôn trở về với vẻ ngoài tươi tắn và vui vẻ.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__details">
+                  <img src="assets/client-5.jpg" alt="client" />
+                  <div>
+                    <h4>Võ Thanh Bình</h4>
+                    <h5>Kế toán</h5>
+                  </div>
+                </div>
+                <p>
+                  Tôi chưa từng thấy một đội ngũ nào tận tâm với động vật như vậy. 
+                  Pet Shop là lựa chọn hàng đầu cho mọi vấn đề về thú cưng.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#">Pet Shop</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Công ty</h4>
+          <ul class="footer__links">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Cửa hàng</a></li>
+            <li><a href="#">Bảng giá</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Câu hỏi</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Địa chỉ</h4>
+          <ul class="footer__links">
+            <li><a href="#">TP. Hồ Chí Minh, Việt Nam</a></li>
+            <li><a href="#">Xem trên bản đồ</a></li>
+          </ul>
+          <br />
+          <h4>Liên hệ</h4>
+          <ul class="footer__links">
+            <li><a href="#">+84 123 456 789</a></li>
+            <li><a href="#">info@petshop.vn</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Nhận tin tức</h4>
+          <p>Cập nhật những tin tức mới nhất từ chúng tôi</p>
+          <form action="/">
+            <input type="text" placeholder="Email của bạn" />
+            <button class="btn">
+              <i class="ri-arrow-right-line"></i>
+            </button>
+          </form>
+          <br />
+          <h4>Theo dõi chúng tôi</h4>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-pinterest-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-tiktok-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Pet Shop Vietnam. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
