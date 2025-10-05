@@ -6,16 +6,12 @@
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
-      
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
-      rel="stylesheet"
-    />
+    
     <link rel="stylesheet" href="styles.css" />
     <title>Web Design | Pet Shop</title>
   </head>
@@ -25,71 +21,84 @@
         <div class="nav__logo">
           <a href="#">Pet Shop</a>
         </div>
+        <div class="nav__search">
+          <i class="ri-search-line"></i>
+          <input type="text" placeholder="Tìm kiếm...">
+        </div>
         <div class="nav__menu__btn" id="menu-btn">
           <i class="ri-menu-line"></i>
         </div>
       </div>
       <ul class="nav__links" id="nav-links">       
-  <li>
-    <a href="#dangban">
-      <div class="nav-item">
-        <i class="ri-store-line"></i>
-        <span>ĐANG BÁN</span>
-      </div>
-    </a>
-  </li>
-  <li>
-    <a href="#giongcho">
-      <div class="nav-item">
-        <i class="ri-bear-smile-line"></i>
-        <span>GIỐNG CHÓ</span>
-      </div>
-    </a>
-  </li>
-  <li>
-    <a href="#phukien">
-      <div class="nav-item">
-        <i class="ri-shirt-line"></i>
-        <span>PHỤ KIỆN</span>
-      </div>
-    </a>
-  </li>
-  <li>
-    <a href="#dichvu">
-      <div class="nav-item">
-        <i class="ri-customer-service-line"></i>
-        <span>DỊCH VỤ</span>
-      </div>
-    </a>
-  </li>
-  <li>
-    <a href="#gioithieu">
-      <div class="nav-item">
-        <i class="ri-information-line"></i>
-        <span>GIỚI THIỆU</span>
-      </div>
-    </a>
-  </li>
-  <li>
-    <a href="#lienhe">
-      <div class="nav-item">
-        <i class="ri-mail-line"></i>
-        <span>LIÊN HỆ</span>
-      </div>
-    </a>
-  </li>
-  <li class="cart-item">
-    <a href="#giohang">
-      <div class="nav-item">
-        <i class="ri-shopping-cart-line"></i>
-        <span>GIỎ HÀNG</span>
-        <div class="cart-badge"></div>
-      </div>
-    </a>
-  </li>
-</ul>
-
+        <li>
+          <a href="#dangban">
+            <div class="nav-item">
+              <i class="ri-store-line"></i>
+              <span>ĐANG BÁN</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#giongcho">
+            <div class="nav-item">
+              <i class="ri-bear-smile-line"></i>
+              <span>GIỐNG CHÓ</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#phukien">
+            <div class="nav-item">
+              <i class="ri-shirt-line"></i>
+              <span>PHỤ KIỆN</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#dichvu">
+            <div class="nav-item">
+              <i class="ri-customer-service-line"></i>
+              <span>DỊCH VỤ</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#gioithieu">
+            <div class="nav-item">
+              <i class="ri-information-line"></i>
+              <span>GIỚI THIỆU</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#lienhe">
+            <div class="nav-item">
+              <i class="ri-mail-line"></i>
+              <span>LIÊN HỆ</span>
+            </div>
+          </a>
+        </li>
+        <li class="cart-item">
+          <a href="#giohang">
+            <div class="nav-item">
+              <i class="ri-shopping-cart-line"></i>
+              <span>GIỎ HÀNG</span>
+              <div class="cart-badge"></div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#dangnhap">
+            <div class="nav-item">
+              <i class="ri-login-box-line"></i>
+              <span>ĐĂNG NHẬP</span>
+              <div class="cart-badge"></div>
+            </div>
+          </a>
+        </li>
+      </ul>
     </nav>
+
     <header id="home">
       <div class="section__container header__container">
         <div class="header__content">
@@ -100,6 +109,7 @@
             Từ việc chăm sóc hàng ngày đến các dịch vụ chuyên nghiệp, 
             chúng tôi luôn ở đây để đảm bảo thú cưng của bạn có cuộc sống hạnh phúc và khỏe mạnh.
           </p>
+          
         </div>
         <div class="header__image">
           <img
@@ -265,11 +275,8 @@
       <div class="section__container client__container">
         <p class="section__subheader">Đánh giá khách hàng</p>
         <h2 class="section__header">Khách hàng nói gì về chúng tôi</h2>
-        <!-- Slider main container -->
         <div class="swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <div class="client__card">
                 <div class="client__details">
@@ -364,9 +371,6 @@
             <li><a href="#">Giới thiệu</a></li>
             <li><a href="#">Dịch vụ</a></li>
             <li><a href="#">Cửa hàng</a></li>
-            <li><a href="#">Bảng giá</a></li>
-            <li><a href="#">Tin tức</a></li>
-            <li><a href="#">Câu hỏi</a></li>
             <li><a href="#">Liên hệ</a></li>
           </ul>
         </div>
@@ -374,7 +378,6 @@
           <h4>Địa chỉ</h4>
           <ul class="footer__links">
             <li><a href="#">TP. Hồ Chí Minh, Việt Nam</a></li>
-            <li><a href="#">Xem trên bản đồ</a></li>
           </ul>
           <br />
           <h4>Liên hệ</h4>
@@ -387,10 +390,7 @@
           <h4>Nhận tin tức</h4>
           <p>Cập nhật những tin tức mới nhất từ chúng tôi</p>
           <form action="/">
-            <input type="text" placeholder="Email của bạn" />
-            <button class="btn">
-              <i class="ri-arrow-right-line"></i>
-            </button>
+            
           </form>
           <br />
           <h4>Theo dõi chúng tôi</h4>
