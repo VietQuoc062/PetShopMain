@@ -1,0 +1,323 @@
+/* ===========================
+   PET SHOP MODAL STYLES
+   =========================== */
+
+/* Import Google Font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Color Variables */
+:root {
+  --primary-color: #dcd7f8;
+  --text-dark: #3f3b57;
+  --text-light: #908ca3;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --border-radius: 10px;
+}
+
+/* General Styles - CHỈ áp dụng cho modal */
+.modal * {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Modal Overlay */
+.modal-backdrop {
+  background-color: rgba(63, 59, 87, 0.7);
+}
+
+/* Modal Dialog */
+.modal-dialog {
+  margin: 2rem auto;
+}
+
+/* Modal Content */
+.modal-content {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+/* Modal Header */
+.modal-header {
+  background-color: var(--primary-color);
+  color: var(--text-dark);
+  padding: 1.5rem 2rem;
+  border-bottom: none;
+  position: relative;
+}
+
+.modal-header .modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+/* Close Button */
+.modal-header .close {
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  background-color: var(--white);
+  border: 2px solid var(--text-dark);
+  border-radius: 50%;
+  color: var(--text-dark);
+  opacity: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-header .close:hover {
+  background-color: var(--text-dark);
+  color: var(--white);
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.modal-header .close span {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2rem;
+  background-color: var(--white);
+}
+
+.modal-info-wrap {
+  text-align: center;
+}
+
+.modal-info-wrap .imagePet {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.modal-info-wrap .modal-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.modal-info-wrap .row {
+  background-color: #f7f5ff;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+}
+
+.modal-info-wrap p {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.modal-info-wrap p span {
+  color: var(--text-dark);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.modal-info-wrap label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.modal-info-wrap input[type="number"] {
+  width: 100px;
+  padding: 0.6rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto 1rem;
+  display: block;
+  transition: all 0.2s ease;
+  background-color: var(--white);
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.modal-info-wrap input[type="number"]:focus {
+  outline: none;
+  border-color: var(--text-dark);
+  box-shadow: 0 0 0 3px rgba(63, 59, 87, 0.1);
+}
+
+#modalProductDescription {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 1.5rem 2rem;
+  border-top: none;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal-footer form {
+  margin: 0;
+}
+
+.modal-footer input[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Add Button - Style giống btn-continue */
+.modal-footer form:first-child input[type="submit"] {
+  background-color: var(--white);
+  color: var(--text-dark);
+  border: 2px solid var(--text-dark);
+}
+
+.modal-footer form:first-child input[type="submit"]:hover {
+  background-color: var(--text-dark);
+  color: var(--white);
+}
+
+/* Buy Button - Style giống btn-checkout */
+.modal-footer form:last-child input[type="submit"] {
+  background-color: var(--text-dark);
+  color: var(--white);
+}
+
+.modal-footer form:last-child input[type="submit"]:hover {
+  background-color: var(--text-light);
+}
+
+/* Table Styles to match cart page */
+.table {
+  background-color: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin: 2rem auto;
+  max-width: var(--max-width);
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+}
+
+.table thead {
+  background-color: transparent;
+}
+
+.table th {
+  color: var(--text-light);
+  font-weight: 600;
+  padding: 1rem;
+  font-size: 0.8rem;
+  border: none;
+  text-transform: uppercase;
+}
+
+.table tbody tr {
+  background-color: #f7f5ff;
+  border-radius: var(--border-radius);
+  transition: transform 0.2s;
+}
+
+.table tbody tr:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.table td {
+  padding: 1rem;
+  color: var(--text-dark);
+  font-size: 1rem;
+  vertical-align: middle;
+  border: none;
+}
+
+.table td:first-child {
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.table td:last-child {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.btn-primary {
+  background-color: var(--text-dark);
+  border: none;
+  color: var(--white);
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media only screen and (max-width: 576px) {
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+
+  .modal-body {
+    padding: 1.5rem;
+  }
+
+  .modal-info-wrap .imagePet {
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .modal-footer {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .modal-footer input[type="submit"] {
+    width: 100%;
+  }
+}
