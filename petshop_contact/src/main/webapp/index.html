@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Liên Hệ Với Chúng Tôi</h2>
+            <p>Hãy để lại thông tin của bạn, chúng tôi sẽ liên hệ lại trong thời gian sớm nhất!</p>
+            
+            <div class="info-item">
+                <i>📧</i>
+                <div>
+                    <h4>Email</h4>
+                    <p>abc@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i>📱</i>
+                <div>
+                    <h4>Điện Thoại</h4>
+                    <p>+84 123 456 789</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i>📍</i>
+                <div>
+                    <h4>Địa Chỉ</h4>
+                    <p>TP. Hồ Chí Minh</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Gửi Tin Nhắn</h2>
+            
+            <div id="message" class="message"></div>
+
+            <form id="contactForm" action="ContactServlet" method="POST">
+                <div class="form-group">
+                    <label for="name">Họ và Tên *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Số Điện Thoại</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tin Nhắn *</label>
+                    <textarea id="messageText" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Gửi Tin Nhắn</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            
+        });
+    </script>
+</body>
+</html>
