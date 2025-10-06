@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 :root {
   --primary-color: #dcd7f8;
@@ -61,6 +62,7 @@ body {
   font-family: 'Great Vibes', cursive;
 }
 
+/* ---------------- NAVIGATION (CHỈNH SỬA) ---------------- */
 nav {
   position: fixed;
   isolation: isolate;
@@ -71,13 +73,14 @@ nav {
 }
 
 .nav__header {
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem 0.5rem;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start; /* Logo + menu sát nhau */
+  gap: 2rem; /* Khoảng cách logo và menu */
   background-color: var(--white);
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .nav__logo a {
@@ -85,6 +88,7 @@ nav {
   font-weight: 700;
   color: var(--text-dark);
   font-family: 'Great Vibes', cursive;
+  margin-right: 1rem; /* Rút khoảng cách với menu items */
 }
 
 .nav__menu__btn {
@@ -93,16 +97,20 @@ nav {
   cursor: pointer;
 }
 
-/* Enhanced Search Bar Styles - Màu tím pastel */
+/* Thanh tìm kiếm căn sang phải */
 .nav__search {
-  padding: 1rem 1.5rem 1.5rem;
+  padding: 0.5rem 1.5rem 1rem;
   background: var(--white);
+  display: flex;
+  justify-content: flex-end; /* Căn sang bên phải */
+  flex: 1; /* Chiếm phần còn lại header */
 }
 
 .nav__search__container {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0;
   position: relative;
+  width: 100%;
 }
 
 .nav__search__wrapper {
@@ -166,6 +174,7 @@ nav {
   display: none;
 }
 
+/* ---------------- NAV LINKS GIỮ NGUYÊN ---------------- */
 .nav__links {
   position: absolute;
   top: 100%;
@@ -197,11 +206,6 @@ nav {
   margin: 0;
   padding: 0;
   width: auto;
-  margin: 0 12px;
-}
-
-.nav__links li i {
-  font-size: 22px;
 }
 
 .nav__links li a {
@@ -252,6 +256,7 @@ nav {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 header {
   padding-top: 8rem;
@@ -763,7 +768,7 @@ img.header__image-bg {
   }
 
   .nav__search {
-    padding: 1.5rem 1.5rem 2rem;
+    padding: 0.75rem 1.5rem 1.25rem;
   }
 
   .nav__search__container {
@@ -771,10 +776,10 @@ img.header__image-bg {
   }
 
   .nav__header {
-    padding: 2rem 1rem 1.5rem;
+    padding: 1.5rem 1rem 0.25rem;
     background-color: transparent;
     max-width: var(--max-width);
-    margin: 0 auto 3rem;
+    margin: 0 auto 0.5rem;
     display: flex;
     justify-content: center;
   }
