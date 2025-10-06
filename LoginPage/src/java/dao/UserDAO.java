@@ -18,18 +18,19 @@ public class UserDAO {
         return DriverManager.getConnection(jdbcURL, jdbcUser, jdbcPass);
     }
 
-    // Thêm user mới
+    // Thêm user mới (gắn với account_id)
     public boolean insertUser(User user) {
-        String sql = "INSERT INTO users(first_name, last_name, phone, email, password, role) VALUES (?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO users(account_id, first_name, last_name, gender, email, phone, address) VALUES (?, ?, ?, ?, ?, ?, ?)";
         try (Connection conn = getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
 
-            ps.setString(1, user.getFirstName());
-            ps.setString(2, user.getLastName());
-            ps.setString(3, user.getPhone());
-            ps.setString(4, user.getEmail());
-            ps.setString(5, user.getPassword());
-            ps.setString(6, user.getRole());
+            ps.setString(1, user.getAccountId());
+            ps.setString(2, user.getFirstName());
+            ps.setString(3, user.getLastName());
+            ps.setString(4, user.getGender());
+            ps.setString(5, user.getEmail());
+            ps.setString(6, user.getPhone());
+            ps.setString(7, user.getAddress());
             ps.executeUpdate();
             return true;
 
@@ -39,24 +40,25 @@ public class UserDAO {
         }
     }
 
-    // Kiểm tra đăng nhập
-    public User checkLogin(String email, String password) {
-        String sql = "SELECT * FROM users WHERE email=? AND password=?";
+    // Lấy thông tin người dùng theo account_id
+    public User getUserByAccountId(String accountId) {
+        String sql = "SELECT * FROM users WHERE account_id = ?";
         try (Connection conn = getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
 
-            ps.setString(1, email);
-            ps.setString(2, password);
+            ps.setString(1, accountId);
 
             try (ResultSet rs = ps.executeQuery()) {
                 if (rs.next()) {
                     User user = new User();
                     user.setId(rs.getInt("id"));
+                    user.setAccountId(rs.getString("account_id"));
                     user.setFirstName(rs.getString("first_name"));
                     user.setLastName(rs.getString("last_name"));
-                    user.setPhone(rs.getString("phone"));
+                    user.setGender(rs.getString("gender"));
                     user.setEmail(rs.getString("email"));
-                    user.setRole(rs.getString("role"));
+                    user.setPhone(rs.getString("phone"));
+                    user.setAddress(rs.getString("address"));
                     return user;
                 }
             }

@@ -14,12 +14,16 @@
     </c:if>
 
     <form action="signup" method="post" class="form-box">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
         <input type="text" name="first_name" placeholder="First Name" required>
         <input type="text" name="last_name" placeholder="Last Name" required>
+        <input type="text" name="gender" placeholder="Gender" required>
         <input type="text" name="phone" placeholder="Phone Number" required>
         <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit"  class="register">Đăng Ký</button>
+        <input type="text" name="address" placeholder="Address" required>
+
+        <button type="submit" class="register">Đăng Ký</button>
     </form>
 
     <p>Bạn đã có tài khoản? <a href="login.jsp">Đăng nhập</a></p>

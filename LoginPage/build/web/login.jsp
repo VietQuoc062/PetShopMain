@@ -14,7 +14,7 @@
     </c:if>
 
     <form action="login" method="post" class="form-box">
-        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="identifier" placeholder="Username / Email / Phone" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Đăng nhập</button>
     </form>
