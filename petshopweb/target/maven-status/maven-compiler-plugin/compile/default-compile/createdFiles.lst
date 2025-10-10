@@ -1,0 +1,5 @@
+com\petshop\dao\CategoryDAO.class
+com\petshop\model\Item.class
+com\petshop\controller\ProductServlet.class
+com\petshop\model\Category.class
+com\petshop\dao\ProductDAO.class
