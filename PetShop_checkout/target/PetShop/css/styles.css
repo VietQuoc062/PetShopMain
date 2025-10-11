@@ -1,0 +1,149 @@
+.order-header {
+    display: inline-block;
+    padding: 2% 5%;                  /* % cho padding OK */
+    background-color: #f9f9f9;
+    border: 2px solid #4CAF50;       /* px cho border-width */
+    border-radius: 0.5em;            /* em cho bo góc */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* % cho offset/blur OK */
+    color: #4CAF50;
+    font-family: 'Arial', sans-serif;
+    font-size: 3vw;                  /* font responsive */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.order-header:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    text-align: center;
+}
+
+/* Form container */
+.checkout-form {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+}
+.checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.checkout-table th,
+.checkout-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+.checkout-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+.checkout-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.checkout-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.empty-cart {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76,175,80,0.4);
+    outline: none;
+}
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.checkout-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.back-btn,
+.checkout-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Nút quay lại */
+.back-btn {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #d6d6d6;
+    transform: translateY(-2px);
+}
+
+/* (Tùy chọn) căn đều hai bên một chút đẹp hơn */
+.button-group {
+    display: flex;
+    justify-content: center; /* căn giữa 2 nút */
+    align-items: center;     /* căn cùng hàng dọc */
+    gap: 40px; /* tạo khoảng cách 40px giữa 2 nút */
+    margin-top: 20px;
+}
